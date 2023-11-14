@@ -1,0 +1,46 @@
+/* Certification.css */
+.certification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: var(--white);
+    margin-top: 80px;
+  }
+  
+  .certification-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .certification-item h2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+  
+  .certification-item p {
+    font-style: italic;
+    color: var(--white);
+  }
+  
+  .certification h1 {
+    color: var(--white);
+  }
+  
+  .certification-item a {
+    color: var(--orange);
+    text-decoration: none;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid transparent; /* Add an initially transparent underline */
+    transition: border-color 0.3s ease-in-out; /* Add a smooth transition for the underline */
+  }
+  
+  .certification-item a:hover {
+    color: orange;
+    border-color: white; /* Change the underline color on hover */
+  }
+  

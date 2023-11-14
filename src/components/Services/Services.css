@@ -1,0 +1,92 @@
+/* Common styles for light and dark mode */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 150px;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333; /* Text color for light mode */
+}
+
+.services-cards {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.card-container {
+  margin-bottom: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card:hover {
+  background-color: #f2f2f2;
+}
+
+.card.selected {
+  background-color: #f2f2f2;
+}
+
+.card-heading {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-detail {
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+.blur {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ccc;
+  margin-top: 1rem;
+}
+
+/* Light mode */
+.services-light {
+  background-color: #f7f7f7;
+}
+
+.card-light {
+  background-color: white;
+}
+
+/* Dark mode */
+.services-dark {
+  background-color: #333;
+  color: white;
+}
+
+.card-dark {
+  background-color: #555;
+  border: 1px solid #444;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .services-cards {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
